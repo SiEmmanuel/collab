@@ -150,34 +150,6 @@
 				width: 100%;
 			}
 
-			.cart-icon {
-				position: relative;
-				cursor: pointer;
-				margin-top: 0.5rem;
-				transition: transform 0.3s;
-			}
-
-			.cart-icon:hover {
-				transform: scale(1.1);
-			}
-
-			.cart-count {
-				position: absolute;
-				top: -8px;
-				right: -8px;
-				background-color: var(--accent);
-				color: white;
-				border-radius: 50%;
-				width: 20px;
-				height: 20px;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				font-size: 0.7rem;
-				font-weight: bold;
-				animation: pulse 1.5s infinite;
-			}
-
 			/* Dark mode toggle */
 			.theme-toggle {
 				position: relative;
@@ -1608,45 +1580,6 @@
 				box-shadow: 0 0 0 2px rgba(106, 76, 147, 0.2);
 			}
 
-			.add-to-cart {
-				background-color: var(--accent);
-				color: white;
-				border: none;
-				padding: 0.5rem 1rem;
-				border-radius: 5px;
-				cursor: pointer;
-				font-weight: 600;
-				transition: all 0.3s;
-				position: relative;
-				overflow: hidden;
-			}
-
-			.add-to-cart::before {
-				content: '';
-				position: absolute;
-				top: 0;
-				left: -100%;
-				width: 100%;
-				height: 100%;
-				background: linear-gradient(
-					90deg,
-					transparent,
-					rgba(255, 255, 255, 0.3),
-					transparent
-				);
-				transition: 0.5s;
-			}
-
-			.add-to-cart:hover::before {
-				left: 100%;
-			}
-
-			.add-to-cart:hover {
-				background-color: #e68f00;
-				transform: translateY(-2px);
-				box-shadow: 0 5px 10px rgba(255, 158, 0, 0.3);
-			}
-
 			/* Footer */
 			footer {
 				background-color: var(--dark);
@@ -1955,128 +1888,6 @@
 				background-color: var(--accent);
 			}
 
-			/* Cart modal */
-			.cart-items {
-				margin-bottom: 1.5rem;
-				max-height: 400px;
-				overflow-y: auto;
-				padding-right: 0.5rem;
-			}
-
-			.cart-items::-webkit-scrollbar {
-				width: 5px;
-			}
-
-			.cart-items::-webkit-scrollbar-track {
-				background: #f1f1f1;
-				border-radius: 5px;
-			}
-
-			.cart-items::-webkit-scrollbar-thumb {
-				background: var(--primary);
-				border-radius: 5px;
-			}
-
-			.cart-items::-webkit-scrollbar-thumb:hover {
-				background: #5a3d80;
-			}
-
-			.cart-item {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				padding: 1rem 0;
-				border-bottom: 1px solid #eee;
-				flex-wrap: wrap;
-				transition: all 0.3s;
-			}
-
-			.cart-item:hover {
-				background-color: rgba(106, 76, 147, 0.05);
-			}
-
-			.cart-item-img {
-				width: 70px;
-				height: 70px;
-				object-fit: cover;
-				border-radius: 5px;
-				margin-right: 0.5rem;
-				transition: all 0.3s;
-			}
-
-			.cart-item:hover .cart-item-img {
-				transform: scale(1.05);
-			}
-
-			.cart-item-details {
-				flex: 1;
-				padding: 0 0.5rem;
-				min-width: 150px;
-			}
-
-			.cart-item-title {
-				font-weight: 600;
-				margin-bottom: 0.3rem;
-				font-size: 0.95rem;
-				color: var(--dark);
-			}
-
-			.cart-item-price {
-				color: var(--primary);
-				font-weight: 600;
-				font-size: 0.9rem;
-			}
-
-			.cart-item-quantity {
-				font-size: 0.8rem;
-				color: #777;
-			}
-
-			.dark-mode .cart-item-quantity {
-				color: #aaa;
-			}
-
-			.cart-item-remove {
-				color: #ff4d4d;
-				cursor: pointer;
-				background: none;
-				border: none;
-				font-size: 1.2rem;
-				margin-left: auto;
-				transition: all 0.3s;
-				width: 30px;
-				height: 30px;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				border-radius: 50%;
-			}
-
-			.cart-item-remove:hover {
-				background-color: rgba(255, 77, 77, 0.1);
-				transform: rotate(90deg);
-			}
-
-			.cart-total {
-				display: flex;
-				justify-content: space-between;
-				font-size: 1.1rem;
-				font-weight: 600;
-				margin-bottom: 1.5rem;
-				padding-top: 1rem;
-				border-top: 2px solid #eee;
-			}
-
-			.cart-actions {
-				display: flex;
-				flex-direction: column;
-				gap: 0.8rem;
-			}
-
-			.cart-actions .btn {
-				width: 100%;
-			}
-
 			/* Animation for Buy Me Coffee button */
 			@keyframes pulse {
 				0% {
@@ -2168,10 +1979,6 @@
 
 				.nav-links {
 					margin-bottom: 0;
-				}
-
-				.cart-icon {
-					margin-top: 0;
 				}
 
 				.hero h1 {
@@ -2286,11 +2093,6 @@
 				.nav-links.active {
 					display: flex;
 				}
-
-				.cart-icon {
-					margin-left: auto;
-					margin-right: 1rem;
-				}
 			}
 		</style>
 	</head>
@@ -2340,10 +2142,6 @@
 							<i class="fas fa-sun"></i>
 							<i class="fas fa-moon"></i>
 							<div class="toggle-ball"></div>
-						</div>
-						<div class="cart-icon" onclick="openModal('cart-modal')">
-							<i class="fas fa-shopping-cart"></i>
-							<span class="cart-count">0</span>
 						</div>
 					</div>
 				</nav>
@@ -2985,30 +2783,6 @@
 			</div>
 		</section>
 
-		<!-- Cart Modal -->
-		<div class="modal" id="cart-modal">
-			<div class="modal-content">
-				<span class="close-modal" onclick="closeModal('cart-modal')"
-					>&times;</span
-				>
-				<h2 class="modal-title">Your Cart</h2>
-				<div class="cart-items" id="cart-items-container">
-					<!-- Cart items will be added here dynamically -->
-					<p>Your cart is empty</p>
-				</div>
-				<div class="cart-total">
-					<span>Total:</span>
-					<span id="cart-total">$0.00</span>
-				</div>
-				<div class="cart-actions">
-					<button class="btn btn-secondary" onclick="closeModal('cart-modal')">
-						Continue Shopping
-					</button>
-					<button class="btn btn-primary" id="checkout-btn">Checkout</button>
-				</div>
-			</div>
-		</div>
-
 		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 		<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
@@ -3041,9 +2815,6 @@
 
 				// Initialize particle background
 				initParticles();
-
-				// Initialize cart functionality
-				initCart();
 
 				// Initialize dark mode
 				initDarkMode();
@@ -3455,140 +3226,6 @@
 					},
 					retina_detect: true,
 				});
-			}
-
-			// Cart functionality
-			function initCart() {
-				let cart = [];
-				const cartCount = document.querySelector('.cart-count');
-				const cartItemsContainer = document.getElementById(
-					'cart-items-container'
-				);
-				const cartTotalElement = document.getElementById('cart-total');
-				const checkoutBtn = document.getElementById('checkout-btn');
-
-				// Update quantity in merchandise items
-				function updateQuantity(button, change) {
-					const quantityInput =
-						button.parentElement.querySelector('.quantity-input');
-					let newValue = parseInt(quantityInput.value) + change;
-					if (newValue < 1) newValue = 1;
-					quantityInput.value = newValue;
-				}
-
-				// Add item to cart
-				function addToCart(name, price, button) {
-					const merchItem = button.closest('.merch-item');
-					const quantity = parseInt(
-						merchItem.querySelector('.quantity-input').value
-					);
-					const imageSrc = merchItem.querySelector('.merch-image').src;
-
-					// Check if item already in cart
-					const existingItemIndex = cart.findIndex(
-						(item) => item.name === name
-					);
-
-					if (existingItemIndex >= 0) {
-						// Update quantity if item exists
-						cart[existingItemIndex].quantity += quantity;
-					} else {
-						// Add new item to cart
-						cart.push({
-							name: name,
-							price: price,
-							quantity: quantity,
-							image: imageSrc,
-						});
-					}
-
-					// Update cart UI
-					updateCart();
-
-					// Show success feedback
-					const originalText = button.textContent;
-					button.textContent = 'Added!';
-					button.style.backgroundColor = '#28a745';
-
-					setTimeout(() => {
-						button.textContent = originalText;
-						button.style.backgroundColor = '';
-					}, 2000);
-				}
-
-				// Update cart UI
-				function updateCart() {
-					// Update cart count
-					const totalItems = cart.reduce(
-						(total, item) => total + item.quantity,
-						0
-					);
-					cartCount.textContent = totalItems;
-
-					// Update cart items list
-					if (cart.length === 0) {
-						cartItemsContainer.innerHTML = '<p>Your cart is empty</p>';
-						cartTotalElement.textContent = '$0.00';
-						checkoutBtn.disabled = true;
-						return;
-					}
-
-					checkoutBtn.disabled = false;
-
-					let cartHTML = '';
-					let total = 0;
-
-					cart.forEach((item, index) => {
-						const itemTotal = item.price * item.quantity;
-						total += itemTotal;
-
-						cartHTML += `
-                        <div class="cart-item">
-                            <img src="${item.image}" alt="${
-							item.name
-						}" class="cart-item-img">
-                            <div class="cart-item-details">
-                                <h4 class="cart-item-title">${item.name}</h4>
-                                <p class="cart-item-price">$${item.price.toFixed(
-																	2
-																)}</p>
-                                <p class="cart-item-quantity">Quantity: ${
-																	item.quantity
-																}</p>
-                            </div>
-                            <button class="cart-item-remove" onclick="removeFromCart(${index})">&times;</button>
-                        </div>
-                    `;
-					});
-
-					cartItemsContainer.innerHTML = cartHTML;
-					cartTotalElement.textContent = `$${total.toFixed(2)}`;
-				}
-
-				// Remove item from cart
-				function removeFromCart(index) {
-					cart.splice(index, 1);
-					updateCart();
-				}
-
-				// Checkout button
-				checkoutBtn.addEventListener('click', function () {
-					alert(
-						'Thank you for your purchase! This is a demo - no actual transaction will occur.'
-					);
-					cart = [];
-					updateCart();
-					closeModal('cart-modal');
-				});
-
-				// Expose functions to global scope for HTML onclick
-				window.updateQuantity = updateQuantity;
-				window.addToCart = addToCart;
-				window.removeFromCart = removeFromCart;
-				window.toggleMap = toggleMap;
-
-				// Initialize cart
-				updateCart();
 			}
 
 			// Dark mode toggle
