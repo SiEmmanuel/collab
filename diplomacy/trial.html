@@ -3428,29 +3428,6 @@
 				navLinks.classList.remove('active');
 			}
 
-			// Show merchandise section
-			function showMerchandise() {
-				// Hide all sections
-				document.querySelectorAll('section').forEach((section) => {
-					section.style.display = 'none';
-				});
-
-				// Show merchandise section
-				document.getElementById('merchandise').style.display = 'block';
-
-				// Scroll to top
-				window.scrollTo(0, 0);
-
-				// Close mobile menu if open
-				closeMenu();
-			}
-
-			// Expose functions to global scope for HTML onclick
-			window.openModal = openModal;
-			window.closeModal = closeModal;
-			window.toggleMenu = toggleMenu;
-			window.closeMenu = closeMenu;
-			window.showMerchandise = showMerchandise;
 		</script>
 	</body>
 </html>
