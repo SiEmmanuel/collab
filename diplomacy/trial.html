@@ -2183,6 +2183,192 @@
 			</div>
 		</section>
 
+		<!-- Audio Player Section -->
+		<section class="audio-player" id="player">
+			<h2 class="section-title">Latest Episode</h2>
+			<div class="player-header">
+				<img
+					src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+					alt="Episode Thumbnail"
+					class="player-thumbnail" />
+				<div class="player-info">
+					<h3>Episode 25: The Future of Global Trade</h3>
+					<p>With Dr. Elena Rodriguez | June 15, 2023</p>
+				</div>
+			</div>
+			<audio
+				id="podcast-audio"
+				src="https://example.com/podcast-episode.mp3"></audio>
+			<div class="player-controls">
+				<button class="control-btn" onclick="skipBackward()">
+					<i class="fas fa-backward"></i>
+				</button>
+				<button class="control-btn play-btn" onclick="togglePlay()">
+					<i class="fas fa-play" id="play-icon"></i>
+				</button>
+				<button class="control-btn" onclick="skipForward()">
+					<i class="fas fa-forward"></i>
+				</button>
+				<div class="progress-container" onclick="seek(event)">
+					<div class="progress-bar" id="progress-bar"></div>
+				</div>
+				<div class="time-display">
+					<span id="current-time">0:00</span>
+					<span id="duration">0:00</span>
+				</div>
+				<div class="volume-control">
+					<button class="control-btn" onclick="toggleMute()">
+						<i class="fas fa-volume-up" id="volume-icon"></i>
+					</button>
+					<input
+						type="range"
+						min="0"
+						max="1"
+						step="0.01"
+						value="1"
+						class="volume-slider"
+						id="volume-slider"
+						oninput="setVolume(this.value)" />
+				</div>
+			</div>
+		</section>
+
+		<!-- Platforms Section -->
+		<section class="platforms">
+			<h2 class="section-title">Where to Listen</h2>
+			<div class="platform-grid">
+				<div class="platform-card">
+					<div class="platform-icon">
+						<i class="fa-brands fa-youtube" style="color: #af3131"></i>
+					</div>
+					<h3>YouTube</h3>
+					<p>
+						Watch our latest episodes with video content and special features.
+					</p>
+					<a
+						href="https://youtube.com/diplomacyunscripted"
+						class="btn btn-primary"
+						target="_blank"
+						>Watch Now</a
+					>
+				</div>
+				<div class="platform-card">
+					<div class="platform-icon">
+						<i class="fab fa-spotify" style="color: #1dd15d"></i>
+					</div>
+					<h3>Spotify</h3>
+					<p>
+						Stream our podcast on Spotify and add us to your favorite playlists.
+					</p>
+					<a
+						href="https://spotify.com/diplomacyunscripted"
+						class="btn btn-primary"
+						target="_blank"
+						>Listen on Spotify</a
+					>
+				</div>
+				<div class="platform-card">
+					<div class="platform-icon">
+						<i class="fas fa-podcast" style="color: #db4aee"></i>
+					</div>
+					<h3>Apple Podcasts</h3>
+					<p>Subscribe on Apple Podcasts to get new episodes automatically.</p>
+					<a
+						href="https://applepodcasts.com/diplomacyunscripted"
+						class="btn btn-primary"
+						target="_blank"
+						>Subscribe</a
+					>
+				</div>
+				<div class="platform-card">
+					<div class="platform-icon">
+						<i class="fab fa-patreon" style="color: #e8364b"></i>
+					</div>
+					<h3>Patreon</h3>
+					<p>Access exclusive content and support the podcast on Patreon.</p>
+					<a
+						href="https://patreon.com/diplomacyunscripted"
+						class="btn btn-primary"
+						target="_blank"
+						>Join Patreon</a
+					>
+				</div>
+			</div>
+		</section>
+
+		<!-- Other Episodes -->
+		<section class="episodes" id="episodes">
+			<h2 class="section-title">Other Episodes</h2>
+			<div class="episode-grid">
+				<div class="episode-card">
+					<img
+						src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+						alt="Episode 1"
+						class="episode-image" />
+					<div class="episode-content">
+						<h3>Episode 25: The Future of Global Trade</h3>
+						<p>
+							Exploring how emerging technologies are reshaping international
+							commerce with trade expert Dr. Elena Rodriguez.
+						</p>
+						<div class="episode-date">June 15, 2023</div>
+						<div class="cta-buttons">
+							<a href="#" class="btn btn-primary">Listen Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="episode-card">
+					<img
+						src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+						alt="Episode 2"
+						class="episode-image" />
+					<div class="episode-content">
+						<h3>Episode 24: Climate Diplomacy in Action</h3>
+						<p>
+							UN Climate Envoy Mark Johnson discusses the challenges of
+							international climate negotiations.
+						</p>
+						<div class="episode-date">June 8, 2023</div>
+						<div class="cta-buttons">
+							<a href="#" class="btn btn-primary">Listen Now</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="episode-card">
+					<img
+						src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
+						alt="Episode 3"
+						class="episode-image" />
+					<div class="episode-content">
+						<h3>Episode 23: Digital Sovereignty</h3>
+						<p>
+							Former cybersecurity director Sarah Chen on how nations are
+							asserting control in the digital realm.
+						</p>
+						<div class="episode-date">June 1, 2023</div>
+						<div class="cta-buttons">
+							<a href="#" class="btn btn-primary">Listen Now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Buy Me A Coffee -->
+		<section class="hero">
+			<div class="bmc-btn">
+				<a
+					href="https://www.buymeacoffee.com/diplomacyunscripted"
+					target="_blank">
+					<img
+						src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+						alt="Buy Me A Coffee"
+						style="height: 50px !important; width: auto" />
+				</a>
+			</div>
+		</section>
+
 		<!-- Guest Carousel Section -->
 		<section class="guest-carousel" id="guests">
 			<h2 class="section-title">Featured Guests</h2>
@@ -2263,191 +2449,6 @@
 				<div class="carousel-dot" onclick="goToGuest(1)"></div>
 				<div class="carousel-dot" onclick="goToGuest(2)"></div>
 				<div class="carousel-dot" onclick="goToGuest(3)"></div>
-			</div>
-		</section>
-
-		<!-- Platforms Section -->
-		<section class="platforms">
-			<h2 class="section-title">Where to Listen</h2>
-			<div class="platform-grid">
-				<div class="platform-card">
-					<div class="platform-icon">
-						<i class="fa-brands fa-youtube" style="color: #af3131"></i>
-					</div>
-					<h3>YouTube</h3>
-					<p>
-						Watch our latest episodes with video content and special features.
-					</p>
-					<a
-						href="https://youtube.com/diplomacyunscripted"
-						class="btn btn-primary"
-						target="_blank"
-						>Watch Now</a
-					>
-				</div>
-				<div class="platform-card">
-					<div class="platform-icon">
-						<i class="fab fa-spotify" style="color: #1dd15d"></i>
-					</div>
-					<h3>Spotify</h3>
-					<p>
-						Stream our podcast on Spotify and add us to your favorite playlists.
-					</p>
-					<a
-						href="https://spotify.com/diplomacyunscripted"
-						class="btn btn-primary"
-						target="_blank"
-						>Listen on Spotify</a
-					>
-				</div>
-				<div class="platform-card">
-					<div class="platform-icon">
-						<i class="fas fa-podcast" style="color: #db4aee"></i>
-					</div>
-					<h3>Apple Podcasts</h3>
-					<p>Subscribe on Apple Podcasts to get new episodes automatically.</p>
-					<a
-						href="https://applepodcasts.com/diplomacyunscripted"
-						class="btn btn-primary"
-						target="_blank"
-						>Subscribe</a
-					>
-				</div>
-				<div class="platform-card">
-					<div class="platform-icon">
-						<i class="fab fa-patreon" style="color: #e8364b"></i>
-					</div>
-					<h3>Patreon</h3>
-					<p>Access exclusive content and support the podcast on Patreon.</p>
-					<a
-						href="https://patreon.com/diplomacyunscripted"
-						class="btn btn-primary"
-						target="_blank"
-						>Join Patreon</a
-					>
-				</div>
-			</div>
-		</section>
-
-		<!-- Latest Episodes -->
-		<!-- Latest Episodes -->
-
-		<section class="episodes" id="episodes">
-			<h2 class="section-title">Latest Episodes</h2>
-			<div class="episode-grid">
-				<div class="episode-card">
-					<img
-						src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-						alt="Episode 1"
-						class="episode-image" />
-					<div class="episode-content">
-						<h3>Episode 25: The Future of Global Trade</h3>
-						<p>
-							Exploring how emerging technologies are reshaping international
-							commerce with trade expert Dr. Elena Rodriguez.
-						</p>
-						<div class="episode-date">June 15, 2023</div>
-						<div class="cta-buttons">
-							<a href="#" class="btn btn-primary">Listen Now</a>
-						</div>
-					</div>
-				</div>
-				<div class="episode-card">
-					<img
-						src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-						alt="Episode 2"
-						class="episode-image" />
-					<div class="episode-content">
-						<h3>Episode 24: Climate Diplomacy in Action</h3>
-						<p>
-							UN Climate Envoy Mark Johnson discusses the challenges of
-							international climate negotiations.
-						</p>
-						<div class="episode-date">June 8, 2023</div>
-						<div class="cta-buttons">
-							<a href="#" class="btn btn-primary">Listen Now</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="episode-card">
-					<img
-						src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
-						alt="Episode 3"
-						class="episode-image" />
-					<div class="episode-content">
-						<h3>Episode 23: Digital Sovereignty</h3>
-						<p>
-							Former cybersecurity director Sarah Chen on how nations are
-							asserting control in the digital realm.
-						</p>
-						<div class="episode-date">June 1, 2023</div>
-						<div class="cta-buttons">
-							<a href="#" class="btn btn-primary">Listen Now</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="hero">
-			<div class="bmc-btn">
-				<a
-					href="https://www.buymeacoffee.com/diplomacyunscripted"
-					target="_blank">
-					<img
-						src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
-						alt="Buy Me A Coffee"
-						style="height: 50px !important; width: auto" />
-				</a>
-			</div>
-		</section>
-
-		<!-- Audio Player Section -->
-		<section class="audio-player" id="player">
-			<div class="player-header">
-				<img
-					src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-					alt="Episode Thumbnail"
-					class="player-thumbnail" />
-				<div class="player-info">
-					<h3>Episode 25: The Future of Global Trade</h3>
-					<p>With Dr. Elena Rodriguez | June 15, 2023</p>
-				</div>
-			</div>
-			<audio
-				id="podcast-audio"
-				src="https://example.com/podcast-episode.mp3"></audio>
-			<div class="player-controls">
-				<button class="control-btn" onclick="skipBackward()">
-					<i class="fas fa-backward"></i>
-				</button>
-				<button class="control-btn play-btn" onclick="togglePlay()">
-					<i class="fas fa-play" id="play-icon"></i>
-				</button>
-				<button class="control-btn" onclick="skipForward()">
-					<i class="fas fa-forward"></i>
-				</button>
-				<div class="progress-container" onclick="seek(event)">
-					<div class="progress-bar" id="progress-bar"></div>
-				</div>
-				<div class="time-display">
-					<span id="current-time">0:00</span>
-					<span id="duration">0:00</span>
-				</div>
-				<div class="volume-control">
-					<button class="control-btn" onclick="toggleMute()">
-						<i class="fas fa-volume-up" id="volume-icon"></i>
-					</button>
-					<input
-						type="range"
-						min="0"
-						max="1"
-						step="0.01"
-						value="1"
-						class="volume-slider"
-						id="volume-slider"
-						oninput="setVolume(this.value)" />
-				</div>
 			</div>
 		</section>
 
