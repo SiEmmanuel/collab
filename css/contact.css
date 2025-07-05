@@ -1,0 +1,223 @@
+/* Contact Section */
+.contact {
+	text-align: center;
+	padding: 2rem 1rem;
+	background-color: var(--secondary);
+	position: relative;
+}
+
+.contact::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><line x1="10" y1="10" x2="90" y2="90" stroke="rgba(26, 115, 232, 0.05)" stroke-width="1"/><line x1="90" y1="10" x2="10" y2="90" stroke="rgba(26, 115, 232, 0.05)" stroke-width="1"/></svg>');
+	opacity: 0.3;
+	z-index: 0;
+}
+
+.contact-container {
+	max-width: 800px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+}
+
+.contact-info {
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: center;
+	gap: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+.contact-method {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 1rem;
+	background-color: var(--card-bg);
+	border-radius: 8px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s;
+	position: relative;
+	overflow: hidden;
+}
+
+.contact-method::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 5px;
+	height: 100%;
+	background-color: var(--primary);
+	transition: width 0.3s;
+}
+
+.contact-method:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-method:hover::before {
+	width: 10px;
+}
+
+.contact-icon {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: var(--primary);
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.2rem;
+	transition: all 0.3s;
+}
+
+.contact-method:hover .contact-icon {
+	background-color: var(--accent);
+	transform: rotate(15deg);
+}
+
+.contact-details h4 {
+	color: var(--primary);
+	margin-bottom: 0.3rem;
+}
+
+.contact-details p {
+	color: #555;
+	font-size: 0.9rem;
+}
+
+.contact-details a {
+	color: #555;
+	font-size: 0.9rem;
+	text-decoration: none;
+}
+
+.dark-mode .contact-details p {
+	color: #aaa;
+}
+
+.contact-form {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1.2rem;
+	background-color: var(--card-bg);
+	padding: 1.5rem;
+	border-radius: 8px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+	position: relative;
+	overflow: hidden;
+}
+
+.contact-form::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 5px;
+	background: linear-gradient(to right, var(--primary), var(--accent));
+}
+
+.form-group {
+	margin-bottom: 1.2rem;
+	position: relative;
+}
+
+.form-label {
+	display: block;
+	margin-bottom: 0.5rem;
+	font-weight: 600;
+	font-size: 0.95rem;
+	color: var(--dark);
+}
+
+.form-input,
+.form-textarea {
+	width: 100%;
+	padding: 0.8rem 1rem;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	font-family: inherit;
+	font-size: 0.95rem;
+	transition: all 0.3s;
+	background-color: var(--secondary);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+	outline: none;
+	border-color: var(--primary);
+	box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.2);
+	background-color: var(--card-bg);
+}
+
+.form-textarea {
+	min-height: 120px;
+	resize: vertical;
+}
+
+.submit-btn {
+	background-color: var(--primary);
+	color: white;
+	border: none;
+	padding: 0.8rem 1.5rem;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: 600;
+	transition: all 0.3s;
+	width: 100%;
+	max-width: 200px;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+
+.submit-btn::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(
+		90deg,
+		transparent,
+		rgba(255, 255, 255, 0.4),
+		transparent
+	);
+	transition: 0.5s;
+}
+
+.submit-btn:hover::before {
+	left: 100%;
+}
+
+.submit-btn:hover {
+	background-color: #0d5ed7;
+	transform: translateY(-3px);
+	box-shadow: 0 5px 15px rgba(26, 115, 232, 0.3);
+}
+
+.form-status {
+	text-align: center;
+	margin-top: 1rem;
+	font-size: 0.9rem;
+	min-height: 20px;
+}
+
+.form-status.success {
+	color: #28a745;
+}
+
+.form-status.error {
+	color: #dc3545;
+}
