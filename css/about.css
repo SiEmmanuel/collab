@@ -1,106 +1,106 @@
 /* About section */
 .about {
-	padding: 2rem 1rem;
-	background-color: var(--secondary);
-	text-align: center;
-	position: relative;
+  padding: 2rem 1rem;
+  background-color: var(--secondary);
+  text-align: center;
+  position: relative;
 }
 
 .about::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="20" cy="20" r="5" fill="rgba(26, 115, 232, 0.05)"/><circle cx="80" cy="80" r="5" fill="rgba(26, 115, 232, 0.05)"/><circle cx="20" cy="80" r="5" fill="rgba(26, 115, 232, 0.05)"/><circle cx="80" cy="20" r="5" fill="rgba(26, 115, 232, 0.05)"/></svg>');
-	opacity: 0.3;
-	z-index: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="20" cy="20" r="5" fill="rgba(26, 115, 232, 0.05)"/><circle cx="80" cy="80" r="5" fill="rgba(26, 115, 232, 0.05)"/><circle cx="20" cy="80" r="5" fill="rgba(26, 115, 232, 0.05)"/><circle cx="80" cy="20" r="5" fill="rgba(26, 115, 232, 0.05)"/></svg>');
+  opacity: 0.3;
+  z-index: 0;
 }
 
 .about-content {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	max-width: 800px;
-	margin: 0 auto;
-	position: relative;
-	z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .host-image {
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	object-fit: cover;
-	border: 4px solid white;
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-	margin-bottom: 1.5rem;
-	transition: all 0.3s;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  transition: all 0.3s;
 }
 
 .host-image:hover {
-	transform: scale(1.05);
-	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 .about-text {
-	text-align: center;
-	margin-bottom: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 .about-text p {
-	margin-bottom: 1rem;
-	line-height: 1.6;
-	font-size: 0.95rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
 }
 
 .social-links {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 1rem;
-	margin-top: 1rem;
-	justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
 }
 
 .social-link {
-	width: 36px;
-	height: 36px;
-	border-radius: 50%;
-	background-color: var(--primary);
-	color: white;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	transition: all 0.3s;
-	text-decoration: none;
-	font-size: 0.9rem;
-	position: relative;
-	overflow: hidden;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  text-decoration: none;
+  font-size: 0.9rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .social-link::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: -100%;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(
-		90deg,
-		transparent,
-		rgba(255, 255, 255, 0.3),
-		transparent
-	);
-	transition: 0.5s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: 0.5s;
 }
 
 .social-link:hover::before {
-	left: 100%;
+  left: 100%;
 }
 
 .social-link:hover {
-	background-color: var(--accent);
-	transform: translateY(-5px) rotate(10deg);
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  background-color: var(--accent);
+  transform: translateY(-5px) rotate(10deg);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
