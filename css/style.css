@@ -1,6 +1,6 @@
 :root {
   --primary: #1f60b7;
-  --secondary: #e8f0fe;
+  --secondary: #233d5b;
   --accent: #5f5a52;
   --dark: #1a1423;
   --light: #ffffff;
@@ -12,7 +12,7 @@
 
 .dark-mode {
   --primary: #4d96ff;
-  --secondary: #1a1423;
+  --secondary: #233d5b;
   --accent: #ffb733;
   --dark: #f8f1ff;
   --light: #1a1423;
@@ -31,7 +31,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: var(--bg);
+  background-color: wheat;
   color: var(--text);
   overflow-x: hidden;
   font-size: 16px;
