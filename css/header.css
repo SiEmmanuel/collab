@@ -4,7 +4,7 @@ header {
   width: 100%;
   height: auto; /* Changed from 100vh */
   overflow: hidden;
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  background: #233d5b;
 }
 
 #logo-canvas {
@@ -36,11 +36,6 @@ header {
   z-index: 1000;
   transition: all 0.3s ease;
   height: 70px; /* Fixed height for navbar */
-}
-
-.hero {
-  height: auto;
-  padding: 120px 0 60px; /* Add padding to account for fixed header */
 }
 
 .navbar.scrolled {
@@ -137,18 +132,6 @@ header {
   z-index: 1001;
 }
 
-/* Hero content inside header */
-.hero-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  width: 80%;
-  color: white;
-  z-index: 5;
-}
-
 /* Media Queries */
 @media (max-width: 1200px) {
   .navbar {
@@ -232,10 +215,6 @@ header {
 
   .nav-links {
     width: 80%;
-  }
-
-  .hero-content {
-    width: 90%;
   }
 }
 
