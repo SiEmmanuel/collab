@@ -55,56 +55,29 @@
 </head>
 
 <body>
-    <!-- Particle Background -->
-    <div id="particles-js"></div>
+  
 
     <!-- Floating icons in background -->
     <div class="floating-icons" id="floating-icons"></div>
-
-    <!-- Background slideshow -->
-    <div class="slideshow">
-        <div class="slide active" style="
-
-					background-image: url('https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80');
-				"></div>
-        <div class="slide" style="
-					background-image: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
-				"></div>
-        <div class="slide" style="
-					background-image: url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
-				"></div>
-    </div>
 
     <!-- Header with 3D Logo Background -->
     <header>
         <canvas id="logo-canvas"></canvas>
         <div class="header-container">
             <nav class="navbar">
-                <div class="logo-container">
-                    <img src="./assets/black.png" alt="Diplomacy Unscripted Logo" class="site-logo">
-                    <div class="logo-text">Diplomacy Unscripted</div>
-                </div>
-
-                <div class="header-social">
-                    <a href="https://youtube.com/@diplomacyunscripted?si=rz7S9c6qN-c1xSOS" target="_blank"><i
-                            class="fa-brands fa-youtube" style="color: #af3131"></i>
-                        <a href="https://x.com/diplomacyhubke?s=11" target="_blank"><i class="fab fa-x"></i></a>
-                        <a href="https://instagram.com/diplomacyunscripted" target="_blank"><i class="fab fa-instagram"
-                                style="color: #db4aee;"></i></a>
-                        <a href="https://www.tiktok.com/@diplomacyunscripted" class="social-link" target="_blank"><i
-                                class="fab fa-tiktok" style="color:black"></i></a>
-
-                </div>
+                 <div class="logo">
+        <img src="./assets/black.png" alt="Podcast Logo" />
+                 </div>
 
                 <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">
                     <i class="fas fa-bars" id="menu-icon"></i>
                 </button>
 
                 <div class="nav-links">
-                    <a href="#home" onclick="closeMenu()">Home</a>
-                    <a href="#episodes" onclick="closeMenu()">Episodes</a>
-                    <a href="#guests" onclick="closeMenu()">Featured Guests</a>
-                    <a href="#contact" onclick="closeMenu()">Contact</a>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="episodes.html">Episodes</a>
+                    <a href="gallery.html">Gallery</a>
                     <a href="https://diplomacyunscripted.hustlesasa.shop" target="_blank">Merchandise</a>
                     <div class="theme-toggle" onclick="toggleDarkMode()">
                         <i class="fas fa-sun"></i>
@@ -118,22 +91,19 @@
     <!-- Slideshow Section -->
     <div class="slideshow-container">
         <div class="slideshow-slide fade">
-            <img src="./assets/1.jpeg" alt="Slide 1">
+            <img src="./assets/1.webp" alt="Slide 1">
         </div>
         <div class="slideshow-slide fade">
-            <img src="./assets/2.jpeg" alt="Slide 2">
+            <img src="./assets/2.webp" alt="Slide 2">
         </div>
         <div class="slideshow-slide fade">
-            <img src="./assets/3.jpeg" alt="Slide 3">
+            <img src="./assets/3.webp" alt="Slide 3">
         </div>
         <div class="slideshow-slide fade">
-            <img src="./assets/4.jpeg" alt="Slide 4">
+            <img src="./assets/4.webp" alt="Slide 4">
         </div>
         <div class="slideshow-slide fade">
-            <img src="./assets/5.jpeg" alt="Slide 5">
-        </div>
-        <div class="slideshow-slide fade">
-            <img src="./assets/6.jpeg" alt="Slide 6">
+            <img src="./assets/5.webp" alt="Slide 5">
         </div>
         <div class="slideshow-slide fade">
             <img src="./assets/7.jpeg" alt="Slide 7">
@@ -166,14 +136,6 @@
             global negotiations and political headlines. Join Isabel as she uncovers
             the human stories behind international relations.
         </p>
-        <div class="cta-buttons">
-            <button class="btn btn-secondary" onclick="showHostModal()">
-                <i class="fas fa-user"></i> Our Host
-            </button>
-            <a href="#contact" class="btn btn-primary">
-                <i class="fas fa-envelope"></i> Contact Us
-            </a>
-        </div>
     </section>
 
     <!-- Audio Player Section -->
@@ -495,9 +457,9 @@
                             <h3>Quick Links</h3>
                             <ul>
                                 <li><a href="#home">Home</a></li>
-                                <li><a href="#episodes">Episodes</a></li>
-                                <li><a href="#guests">Featured Guests</a></li>
-                                <li><a href="#contact">Contact</a></li>
+                                <li><a href="#episodes">about</a></li>
+                                <li><a href="#guests">episodes</a></li>
+                                <li><a href="#contact">gallery</a></li>
                                 <li><a href="https://diplomacyunscripted.hustlesasa.shop"
                                         target="_blank">Merchandise</a></li>
                             </ul>
