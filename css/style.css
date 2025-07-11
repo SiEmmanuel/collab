@@ -10,18 +10,6 @@
   --header-bg: rgba(212, 207, 207, 0.95);
 }
 
-.dark-mode {
-  --primary: #4d96ff;
-  --secondary: #233d5b;
-  --accent: #ffb733;
-  --dark: #f8f1ff;
-  --light: #1a1423;
-  --bg: #1a1423;
-  --text: #f8f1ff;
-  --card-bg: #2a2438;
-  --header-bg: rgba(26, 20, 35, 0.95);
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -161,10 +149,6 @@ header {
   transition: transform 0.3s ease;
 }
 
-.dark-mode .toggle-ball {
-  transform: translateX(30px);
-}
-
 .menu-toggle {
   display: none;
   background: none;
@@ -192,10 +176,6 @@ main {
   position: relative;
   overflow: hidden;
   margin-top: 70px; /* Compensates for fixed header */
-}
-
-.dark-mode .hero {
-  background: linear-gradient(rgba(26, 20, 35, 0.8), rgba(26, 20, 35, 0.8));
 }
 
 .hero::before {
@@ -804,10 +784,6 @@ main {
   font-size: 0.9rem;
 }
 
-.dark-mode .platform-card p {
-  color: #ccc;
-}
-
 /* Latest episode */
 .episodes {
   padding: 2rem 1rem;
@@ -892,10 +868,6 @@ main {
   color: #666;
   margin-bottom: 0.8rem;
   font-size: 0.9rem;
-}
-
-.dark-mode .episode-content p {
-  color: #aaa;
 }
 
 .episode-date {
@@ -1431,10 +1403,6 @@ main {
   color: #555;
   font-size: 0.9rem;
   text-decoration: none;
-}
-
-.dark-mode .contact-details p {
-  color: #aaa;
 }
 
 .contact-form {
@@ -2242,15 +2210,6 @@ footer::before {
   .footer-column h3 {
     font-size: 1.1rem;
   }
-}
-
-/* Dark mode styles */
-.dark-mode .navbar {
-  background-color: rgba(26, 26, 46, 0.9);
-}
-
-.dark-mode .nav-links {
-  background: rgba(26, 26, 46, 0.95);
 }
 
 /* Animation for menu icon */
