@@ -11,6 +11,9 @@
   --light-bg: #f8f9fa;
   --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   --transition: all 0.3s ease;
+  --font-large: 2rem;
+  --font-medium: 1.2rem;
+  --spacing-section: 3rem;
 }
 
 * {
@@ -134,6 +137,12 @@ ul {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+a:focus,
+.btn:focus {
+  outline: 2px dashed var(--accent-color);
+  outline-offset: 4px;
 }
 
 /* Header Styles */
@@ -897,6 +906,34 @@ header {
 }
 
 /* Footer */
+/* Footer Social Links - Horizontal Layout */
+.footer-column:nth-child(2) ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.5rem; /* Adjust spacing between icons */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer-column:nth-child(2) li {
+  display: inline-block;
+  margin: 0;
+}
+
+.social-link {
+  display: inline-block;
+  font-size: 1.5rem; /* Adjust icon size */
+  color: #fff; /* Change color as needed */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-3px);
+  color: #f8f8f8; /* Hover color */
+}
+
 footer {
   background-color: var(--dark-bg);
   color: white;
@@ -1312,6 +1349,13 @@ footer {
 
   .back-to-top {
     right: 20px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body:not(.dark-mode) {
+    background-color: #121212;
+    color: #e0e0e0;
   }
 }
 
