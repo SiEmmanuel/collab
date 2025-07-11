@@ -25,7 +25,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: unset;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -36,14 +36,17 @@ body {
   overflow-x: hidden;
   font-size: 16px;
   line-height: 1.6;
+  padding-top: 70px; /* Ensures content starts below fixed header */
 }
 
 /* Header Styles */
 header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
-  overflow: hidden;
+  height: 70px;
+  z-index: 1000;
   background: #233d5b;
 }
 
@@ -60,7 +63,7 @@ header {
   position: relative;
   z-index: 1;
   width: 100%;
-  height: auto;
+  height: 70px;
 }
 
 .navbar {
@@ -73,9 +76,9 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1000;
-  transition: all 0.3s ease;
   height: 70px;
+  z-index: 1001;
+  transition: all 0.3s ease;
 }
 
 .navbar.scrolled {
@@ -169,7 +172,13 @@ header {
   color: white;
   font-size: 1.5rem;
   cursor: pointer;
-  z-index: 1001;
+  z-index: 1002;
+}
+
+/* Main content spacing */
+main {
+  padding-top: 20px; /* Additional padding after header */
+  min-height: calc(100vh - 70px);
 }
 
 /* Hero section */
@@ -182,6 +191,7 @@ header {
   );
   position: relative;
   overflow: hidden;
+  margin-top: 70px; /* Compensates for fixed header */
 }
 
 .dark-mode .hero {
@@ -2078,8 +2088,9 @@ footer::before {
     background: rgba(0, 0, 0, 0.9);
     backdrop-filter: blur(10px);
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 2rem;
+    padding-top: 2rem;
     transition: right 0.5s ease;
     z-index: 1000;
   }

@@ -24,9 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	// Initialize particle background
 	initParticles();
 
-	// Initialize dark mode
-	initDarkMode();
-
 	// Initialize smooth scrolling
 	initSmoothScrolling();
 
@@ -435,24 +432,6 @@ function initParticles() {
 	});
 }
 
-// Dark mode toggle
-function initDarkMode() {
-	function toggleDarkMode() {
-		document.body.classList.toggle('dark-mode');
-		localStorage.setItem(
-			'darkMode',
-			document.body.classList.contains('dark-mode')
-		);
-	}
-
-	// Check for saved dark mode preference
-	if (localStorage.getItem('darkMode') === 'true') {
-		document.body.classList.add('dark-mode');
-	}
-
-	// Expose function to global scope for HTML onclick
-	window.toggleDarkMode = toggleDarkMode;
-}
 
 // Smooth scrolling for anchor links
 function initSmoothScrolling() {
