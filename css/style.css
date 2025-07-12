@@ -170,7 +170,7 @@ h4 {
 	font-family: 'Playfair Display', serif;
 	font-size: 1.8rem;
 	margin-bottom: var(--space-xl);
-	color: var(--primary);
+	color: 233d5b;
 	position: relative;
 	display: inline-block;
 	text-align: center;
@@ -1477,7 +1477,7 @@ h4 {
 .contact {
 	text-align: center;
 	padding: var(--space-xl) var(--space-md);
-	background-color: var(--secondary);
+	background-color: ;
 	position: relative;
 }
 
@@ -1567,7 +1567,7 @@ h4 {
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: var(--space-md);
-	background-color: var(--card-bg);
+	background-color: 233d5b);
 	padding: var(--space-lg);
 	border-radius: var(--radius-md);
 	box-shadow: var(--shadow-sm);
@@ -1750,7 +1750,7 @@ footer {
 .footer-column ul {
 	list-style: none;
 	display: flex;
-	justify-content: center;
+	justify-content: left;
 	gap: var(--space-md);
 	flex-wrap: wrap;
 	padding: 0;
@@ -1881,63 +1881,6 @@ footer {
 /* ============================================= */
 /* Utility Components */
 /* ============================================= */
-
-/* Back to top button */
-.back-to-top {
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	width: 50px;
-	height: 50px;
-	background-color: var(--primary);
-	color: white;
-	border-radius: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: var(--text-lg);
-	cursor: pointer;
-	transition: all var(--transition-normal);
-	opacity: 0;
-	visibility: hidden;
-	z-index: 99;
-	box-shadow: var(--shadow-md);
-}
-
-.back-to-top.visible {
-	opacity: 1;
-	visibility: visible;
-}
-
-.back-to-top:hover {
-	background-color: var(--accent);
-	transform: translateY(-5px);
-}
-
-/* Globe icon to show map */
-.globe-icon {
-	position: fixed;
-	bottom: 20px;
-	left: 20px;
-	width: 50px;
-	height: 50px;
-	background-color: var(--primary);
-	color: white;
-	border-radius: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: var(--text-lg);
-	cursor: pointer;
-	transition: all var(--transition-normal);
-	z-index: 99;
-	box-shadow: var(--shadow-md);
-}
-
-.globe-icon:hover {
-	background-color: var(--accent);
-	transform: scale(1.1);
-}
 
 /* Modal styles */
 .modal {
