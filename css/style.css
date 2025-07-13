@@ -1793,7 +1793,7 @@ footer {
 .newsletter-form {
   display: flex;
   margin-top: var(--space-md);
-  max-width: 250px;
+  max-width: 320px;
   position: relative;
   overflow: hidden;
   border-radius: var(--radius-sm);
