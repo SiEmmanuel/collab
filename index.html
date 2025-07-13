@@ -1,380 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=0.5, user-scalable=yes" />
-		<title>Diplomacy Unscripted - Podcast by Isabel</title>
-		<meta
-			name="description"
-			content="Diplomacy Unscripted explores global politics, foreign policy & international relations through expert interviews & in-depth analysis. Tune in for insightful discussions." />
-		<meta
-			property="og:title"
-			content="Diplomacy Unscripted – Global Affairs Podcast & Political Analysis" />
-		<meta
-			property="og:description"
-			content="Expert insights on global politics, foreign policy & international relations. Listen to the Diplomacy Unscripted podcast." />
-		<meta
-			property="og:image"
-			content="https://diplomacyunscripted.org/podcast-cover.jpg" />
-		<meta property="og:url" content="https://diplomacyunscripted.org/" />
-		<meta property="og:type" content="website" />
-		<link
-			rel="apple-touch-icon"
-			sizes="180x180"
-			href="./assets/icons/apple-touch-icon.png" />
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="./assets/icons/favicon-32x32.png" />
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="16x16"
-			href="./assets/icons/favicon-16x16.png" />
-		<link rel="manifest" href="./assets/icons/site.webmanifest" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap"
-			rel="stylesheet" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=0.5, user-scalable=yes"
+    />
+    <title>Diplomacy Unscripted - Podcast by Isabel</title>
+    <meta
+      name="description"
+      content="Diplomacy Unscripted explores global politics, foreign policy & international relations through expert interviews & in-depth analysis. Tune in for insightful discussions."
+    />
+    <meta
+      property="og:title"
+      content="Diplomacy Unscripted – Global Affairs Podcast & Political Analysis"
+    />
+    <meta
+      property="og:description"
+      content="Expert insights on global politics, foreign policy & international relations. Listen to the Diplomacy Unscripted podcast."
+    />
+    <meta
+      property="og:image"
+      content="https://diplomacyunscripted.org/podcast-cover.jpg"
+    />
+    <meta property="og:url" content="https://diplomacyunscripted.org/" />
+    <meta property="og:type" content="website" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/icons/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-		<link rel="stylesheet" href="./css/style.css" />
-		<link
-			rel="stylesheet"
-			href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" />
-		<link
-			rel="stylesheet"
-			href="https://unpkg.com/leaflet-search@2.3.7/dist/leaflet-search.min.css" />
-		<script src="https://unpkg.com/leaflet-search@2.3.7/dist/leaflet-search.min.js"></script>
-		<script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
-		<script type="application/ld+json">
-			{
-				"@context": "https://schema.org",
-				"@type": "PodcastSeries",
-				"name": "Diplomacy Unscripted",
-				"description": "A podcast analyzing global politics, diplomacy & international relations.",
-				"url": "https://diplomacyunscripted.org/",
-				"image": "https://diplomacyunscripted.org/podcast-cover.jpg"
-			}
-		</script>
-	</head>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet-search@2.3.7/dist/leaflet-search.min.css"
+    />
+    <script src="https://unpkg.com/leaflet-search@2.3.7/dist/leaflet-search.min.js"></script>
+    <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "PodcastSeries",
+        "name": "Diplomacy Unscripted",
+        "description": "A podcast analyzing global politics, diplomacy & international relations.",
+        "url": "https://diplomacyunscripted.org/",
+        "image": "https://diplomacyunscripted.org/podcast-cover.jpg"
+      }
+    </script>
+  </head>
 
-	<body>
-		<!-- Floating icons in background -->
-		<div class="floating-icons" id="floating-icons"></div>
+  <body>
+    <!-- Floating icons in background -->
+    <div class="floating-icons" id="floating-icons"></div>
 
-		<!-- Header with 3D Logo Background -->
-		<header>
-			<nav class="navbar">
-				<div class="logo">
-					<img src="./assets/color.png" alt="Podcast Logo" />
-				</div>
+    <!-- Header with 3D Logo Background -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="./assets/color.png" alt="Podcast Logo" />
+        </div>
 
-				<button
-					class="menu-toggle"
-					onclick="toggleMenu()"
-					aria-label="Toggle navigation">
-					<i class="fas fa-bars" id="menu-icon"></i>
-				</button>
+        <button
+          class="menu-toggle"
+          onclick="toggleMenu()"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars" id="menu-icon"></i>
+        </button>
 
-				<div class="nav-links">
-					<a href="index.html">Home</a>
-					<a href="about.html">About</a>
-					<a href="episodes.html">Episodes</a>
-					<a href="gallery.html">Gallery</a>
-					<a href="https://diplomacyunscripted.hustlesasa.shop" target="_blank"
-						>Merchandise</a
-					>
-				</div>
-			</nav>
-		</header>
-		<!-- Slideshow Section -->
-		<div class="slideshow-container">
-			<div class="slideshow-slide fade">
-				<img src="./assets/1.webp" alt="Slide 1" />
-			</div>
-			<div class="slideshow-slide fade">
-				<img src="./assets/2.webp" alt="Slide 2" />
-			</div>
-			<div class="slideshow-slide fade">
-				<img src="./assets/3.webp" alt="Slide 3" />
-			</div>
-			<div class="slideshow-slide fade">
-				<img src="./assets/4.webp" alt="Slide 4" />
-			</div>
-			<div class="slideshow-slide fade">
-				<img src="./assets/5.webp" alt="Slide 5" />
-			</div>
-			<div class="slideshow-slide fade">
-				<img src="./assets/7.webp" alt="Slide 6" />
-			</div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="episodes.html">Episodes</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="https://diplomacyunscripted.hustlesasa.shop" target="_blank"
+            >Merchandise</a
+          >
+        </div>
+      </nav>
+    </header>
+    <!-- Slideshow Section -->
+    <div class="slideshow-container">
+      <div class="slideshow-slide fade">
+        <img src="./assets/1.webp" alt="Slide 1" />
+      </div>
+      <div class="slideshow-slide fade">
+        <img src="./assets/2.webp" alt="Slide 2" />
+      </div>
+      <div class="slideshow-slide fade">
+        <img src="./assets/3.webp" alt="Slide 3" />
+      </div>
+      <div class="slideshow-slide fade">
+        <img src="./assets/4.webp" alt="Slide 4" />
+      </div>
+      <div class="slideshow-slide fade">
+        <img src="./assets/5.webp" alt="Slide 5" />
+      </div>
+      <div class="slideshow-slide fade">
+        <img src="./assets/7.webp" alt="Slide 6" />
+      </div>
 
-			<!-- Navigation arrows -->
-			<a class="slideshow-prev" onclick="plusSlides(-1)">&#10094;</a>
-			<a class="slideshow-next" onclick="plusSlides(1)">&#10095;</a>
+      <!-- Dots indicator -->
+      <div class="slideshow-dots">
+        <span class="slideshow-dot" onclick="currentSlide(1)"></span>
+        <span class="slideshow-dot" onclick="currentSlide(2)"></span>
+        <span class="slideshow-dot" onclick="currentSlide(3)"></span>
+        <span class="slideshow-dot" onclick="currentSlide(4)"></span>
+        <span class="slideshow-dot" onclick="currentSlide(5)"></span>
+        <span class="slideshow-dot" onclick="currentSlide(6)"></span>
+      </div>
+    </div>
+    <!-- Hero Section -->
+    <main class="main-content">
+      <section class="hero" id="home">
+        <h1>DIPLOMACY UNSCRIPTED</h1>
+        <h2>Podcast by Isabel</h2>
+        <p>
+          Diplomacy is often wrapped in layers of formality, jargon, and red
+          tape - but <strong>Diplomacy Unscripted</strong> peels all that away.
+          Here we humanize diplomacy through bold stories, candid talks, and
+          untold insights - revealing the real people, moments, and missteps
+          behind global negotiations and political headlines. Join Isabel as she
+          uncovers the human stories behind international relations.
+        </p>
+      </section>
 
-			<!-- Dots indicator -->
-			<div class="slideshow-dots">
-				<span class="slideshow-dot" onclick="currentSlide(1)"></span>
-				<span class="slideshow-dot" onclick="currentSlide(2)"></span>
-				<span class="slideshow-dot" onclick="currentSlide(3)"></span>
-				<span class="slideshow-dot" onclick="currentSlide(4)"></span>
-				<span class="slideshow-dot" onclick="currentSlide(5)"></span>
-				<span class="slideshow-dot" onclick="currentSlide(6)"></span>
-			</div>
-		</div>
-		<!-- Hero Section -->
-		<main class="main-content">
-			<section class="hero" id="home">
-				<h1>DIPLOMACY UNSCRIPTED</h1>
-				<h2>Podcast by Isabel</h2>
-				<p>
-					Diplomacy is often wrapped in layers of formality, jargon, and red
-					tape - but <strong>Diplomacy Unscripted</strong> peels all that away.
-					Here we humanize diplomacy through bold stories, candid talks, and
-					untold insights - revealing the real people, moments, and missteps
-					behind global negotiations and political headlines. Join Isabel as she
-					uncovers the human stories behind international relations.
-				</p>
-			</section>
+      <!-- Audio Player Section -->
+      <section class="audio-player" id="player">
+        <h2 class="section-title">Latest Episode</h2>
+        <div class="player-header">
+          <img
+            src="./assets/2.jpeg"
+            alt="Episode Thumbnail"
+            class="player-thumbnail"
+          />
+          <div class="player-info">
+            <h3>Episode 1: Dropping Soon</h3>
+            <p>With - Coach Sarah | July, 2025</p>
+          </div>
+        </div>
+        <audio
+          id="podcast-audio"
+          src="https://example.com/podcast-episode.mp3"
+        ></audio>
+        <div class="player-controls">
+          <button class="control-btn" onclick="skipBackward()">
+            <i class="fas fa-backward"></i>
+          </button>
+          <button class="control-btn play-btn" onclick="togglePlay()">
+            <i class="fas fa-play" id="play-icon"></i>
+          </button>
+          <button class="control-btn" onclick="skipForward()">
+            <i class="fas fa-forward"></i>
+          </button>
+          <div class="progress-container" onclick="seek(event)">
+            <div class="progress-bar" id="progress-bar"></div>
+          </div>
+          <div class="time-display">
+            <span id="current-time">0:00</span>
+            <span id="duration">0:00</span>
+          </div>
+          <div class="volume-control">
+            <button class="control-btn" onclick="toggleMute()">
+              <i class="fas fa-volume-up" id="volume-icon"></i>
+            </button>
+            <input
+              type="range"
+              min="0"
+              max="1"
+              step="0.01"
+              value="1"
+              class="volume-slider"
+              id="volume-slider"
+              oninput="setVolume(this.value)"
+            />
+          </div>
+        </div>
+      </section>
 
-			<!-- Audio Player Section -->
-			<section class="audio-player" id="player">
-				<h2 class="section-title">Latest Episode</h2>
-				<div class="player-header">
-					<img
-						src="./assets/2.jpeg"
-						alt="Episode Thumbnail"
-						class="player-thumbnail" />
-					<div class="player-info">
-						<h3>Episode 1: Dropping Soon</h3>
-						<p>With - Coach Sarah | July, 2025</p>
-					</div>
-				</div>
-				<audio
-					id="podcast-audio"
-					src="https://example.com/podcast-episode.mp3"></audio>
-				<div class="player-controls">
-					<button class="control-btn" onclick="skipBackward()">
-						<i class="fas fa-backward"></i>
-					</button>
-					<button class="control-btn play-btn" onclick="togglePlay()">
-						<i class="fas fa-play" id="play-icon"></i>
-					</button>
-					<button class="control-btn" onclick="skipForward()">
-						<i class="fas fa-forward"></i>
-					</button>
-					<div class="progress-container" onclick="seek(event)">
-						<div class="progress-bar" id="progress-bar"></div>
-					</div>
-					<div class="time-display">
-						<span id="current-time">0:00</span>
-						<span id="duration">0:00</span>
-					</div>
-					<div class="volume-control">
-						<button class="control-btn" onclick="toggleMute()">
-							<i class="fas fa-volume-up" id="volume-icon"></i>
-						</button>
-						<input
-							type="range"
-							min="0"
-							max="1"
-							step="0.01"
-							value="1"
-							class="volume-slider"
-							id="volume-slider"
-							oninput="setVolume(this.value)" />
-					</div>
-				</div>
-			</section>
+      <!-- Platforms Section -->
 
-			<!-- Platforms Section -->
+      <!-- Contact Section -->
+      <section class="contact" id="contact">
+        <div class="contact-container">
+          <h2 class="section-title">Contact Us</h2>
 
-			<!-- Contact Section -->
-			<section class="contact" id="contact">
-				<div class="contact-container">
-					<h2 class="section-title">Contact Us</h2>
+          <div class="contact-info">
+            <div class="contact-method">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Email Us</h4>
+                <p>
+                  <a href="mailto:info@diplomacyunscripted.org">Mail us</a>
+                </p>
+              </div>
+            </div>
 
-					<div class="contact-info">
-						<div class="contact-method">
-							<div class="contact-icon">
-								<i class="fas fa-envelope"></i>
-							</div>
-							<div class="contact-details">
-								<h4>Email Us</h4>
-								<p>
-									<a href="mailto:info@diplomacyunscripted.org">Mail us</a>
-								</p>
-							</div>
-						</div>
+            <div class="contact-method">
+              <div class="contact-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Call Us</h4>
+                <p>+254 725 752 409</p>
+              </div>
+            </div>
 
-						<div class="contact-method">
-							<div class="contact-icon">
-								<i class="fas fa-phone-alt"></i>
-							</div>
-							<div class="contact-details">
-								<h4>Call Us</h4>
-								<p>+254 725 752 409</p>
-							</div>
-						</div>
+            <div class="contact-method">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Visit Us</h4>
+                <p>Nairobi</p>
+              </div>
+            </div>
+          </div>
 
-						<div class="contact-method">
-							<div class="contact-icon">
-								<i class="fas fa-map-marker-alt"></i>
-							</div>
-							<div class="contact-details">
-								<h4>Visit Us</h4>
-								<p>Nairobi</p>
-							</div>
-						</div>
-					</div>
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Your Name</label>
+              <input
+                type="text"
+                id="name"
+                class="form-input"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Your Email</label>
+              <input
+                type="email"
+                id="email"
+                class="form-input"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="form-group full-width">
+              <label for="subject" class="form-label">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                class="form-input"
+                placeholder="Enter subject"
+                required
+              />
+            </div>
+            <div class="form-group full-width">
+              <label for="message" class="form-label">Your Message</label>
+              <textarea
+                id="message"
+                class="form-textarea"
+                placeholder="Enter your message"
+                required
+              ></textarea>
+            </div>
+            <div class="form-group full-width" style="text-align: center">
+              <button type="submit" class="submit-btn">Send Message</button>
+            </div>
+            <div class="form-status"></div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
 
-					<form id="contactForm" class="contact-form">
-						<div class="form-group">
-							<label for="name" class="form-label">Your Name</label>
-							<input
-								type="text"
-								id="name"
-								class="form-input"
-								placeholder="Enter your name"
-								required />
-						</div>
-						<div class="form-group">
-							<label for="email" class="form-label">Your Email</label>
-							<input
-								type="email"
-								id="email"
-								class="form-input"
-								placeholder="Enter your email"
-								required />
-						</div>
-						<div class="form-group full-width">
-							<label for="subject" class="form-label">Subject</label>
-							<input
-								type="text"
-								id="subject"
-								class="form-input"
-								placeholder="Enter subject"
-								required />
-						</div>
-						<div class="form-group full-width">
-							<label for="message" class="form-label">Your Message</label>
-							<textarea
-								id="message"
-								class="form-textarea"
-								placeholder="Enter your message"
-								required></textarea>
-						</div>
-						<div class="form-group full-width" style="text-align: center">
-							<button type="submit" class="submit-btn">Send Message</button>
-						</div>
-						<div class="form-status"></div>
-					</form>
-				</div>
-			</section>
-		</main>
-		<!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Diplomacy Unscripted</h3>
+          <p>
+            Demystifying Diplomacy, making it accessible
+            <br />
+            and engaging for a broad audience
+          </p>
+        </div>
 
-		<footer>
-			<div class="footer-content">
-				<div class="footer-column">
-					<h3>Diplomacy Unscripted</h3>
-					<p>
-						Demystifying Diplomacy, making it accessible and engaging for a
-						broad audience
-					</p>
-				</div>
+        <div class="footer-column">
+          <h3>Follow us on</h3>
+          <ul>
+            <li>
+              <a
+                href="https://instagram.com/diplomacyunscripted"
+                class="social-link"
+                target="_blank"
+              >
+                <i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://facebook.com/profile.php?id=61577708411176"
+                class="social-link"
+                target="_blank"
+              >
+                <i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://x.com/diplomacyhubke?s=11"
+                class="social-link"
+                target="_blank"
+              >
+                <i class="fab fa-x"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.tiktok.com/@diplomacyunscripted"
+                class="social-link"
+                target="_blank"
+              >
+                <i class="fab fa-tiktok"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
 
-				<div class="footer-column">
-					<h3>Follow us on</h3>
-					<ul>
-						<li>
-							<a
-								href="https://instagram.com/diplomacyunscripted"
-								class="social-link"
-								target="_blank">
-								<i class="fab fa-instagram"></i
-							></a>
-						</li>
-						<li>
-							<a
-								href="https://facebook.com/profile.php?id=61577708411176"
-								class="social-link"
-								target="_blank">
-								<i class="fab fa-facebook-f"></i
-							></a>
-						</li>
-						<li>
-							<a
-								href="https://x.com/diplomacyhubke?s=11"
-								class="social-link"
-								target="_blank">
-								<i class="fab fa-x"></i
-							></a>
-						</li>
-						<li>
-							<a
-								href="https://www.tiktok.com/@diplomacyunscripted"
-								class="social-link"
-								target="_blank">
-								<i class="fab fa-tiktok"></i
-							></a>
-						</li>
-					</ul>
-				</div>
+        <div class="footer-column">
+          <h3>Subscribe</h3>
+          <p class="newsletter-text">
+            Stay updated with our latest episodes and news.
+          </p>
+          <form class="newsletter-form">
+            <input
+              type="email"
+              class="newsletter-input"
+              placeholder="Your email address"
+            />
+            <button type="submit" class="newsletter-btn">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="partners">
+        <p>
+          In Partnership with
+          <a
+            href="https://www.sarovahotels.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Sarova Hotels</a
+          >
+        </p>
+      </div>
+      <div class="copyright">
+        &copy; 2025 Diplomacy Unscripted. All rights reserved.
+      </div>
+    </footer>
 
-				<div class="footer-column">
-					<h3>Subscribe</h3>
-					<p class="newsletter-text">
-						Stay updated with our latest episodes and news.
-					</p>
-					<form class="newsletter-form">
-						<input
-							type="email"
-							class="newsletter-input"
-							placeholder="Your email address" />
-						<button type="submit" class="newsletter-btn">
-							<i class="fas fa-paper-plane"></i>
-						</button>
-					</form>
-				</div>
-			</div>
-			<div class="partners">
-				<p>
-					In Partnership with
-					<a
-						href="https://www.sarovahotels.com/"
-						target="_blank"
-						rel="noopener noreferrer"
-						>Sarova Hotels</a
-					>
-				</p>
-			</div>
-			<div class="copyright">
-				&copy; 2025 Diplomacy Unscripted. All rights reserved.
-			</div>
-		</footer>
+    <!-- Scripts -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.net.min.js"></script>
 
-		<!-- Scripts -->
-		<script
-			async
-			src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-		<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.net.min.js"></script>
-
-		<!-- Main JavaScript File -->
-		<script src="./js/main.js"></script>
-	</body>
+    <!-- Main JavaScript File -->
+    <script src="./js/main.js"></script>
+  </body>
 </html>
