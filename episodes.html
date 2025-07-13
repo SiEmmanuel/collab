@@ -86,175 +86,228 @@
 
     <!-- Header with 3D Logo Background -->
     <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="./assets/color.png" alt="Podcast Logo" />
+        </div>
 
-        <nav class="navbar">
-          <div class="logo">
-            <img src="./assets/color.png" alt="Podcast Logo" />
-          </div>
+        <button
+          class="menu-toggle"
+          onclick="toggleMenu()"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars" id="menu-icon"></i>
+        </button>
 
-          <button
-            class="menu-toggle"
-            onclick="toggleMenu()"
-            aria-label="Toggle navigation"
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="episodes.html">Episodes</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="https://diplomacyunscripted.hustlesasa.shop" target="_blank"
+            >Merchandise</a
           >
-            <i class="fas fa-bars" id="menu-icon"></i>
-          </button>
-
-          <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="episodes.html">Episodes</a>
-            <a href="gallery.html">Gallery</a>
-            <a
-              href="https://diplomacyunscripted.hustlesasa.shop"
-              target="_blank"
-              >Merchandise</a
-            >
-          </div>
-        </nav>
-
+        </div>
+      </nav>
     </header>
 
     <!-- -->
- <!-- Platforms Section -->
-  <main class="main-content">
-    <section class="platforms">
+    <!-- Platforms Section -->
+    <main class="main-content">
+      <section class="platforms">
         <h2 class="section-title">Where to Listen</h2>
 
         <!-- Mobile version (shown on small screens) -->
         <div class="platforms-card-mobile">
-            <div class="">
-                <a href="https://youtube.com/@diplomacyunscripted" target="_blank">
-                    <i class="fa-brands fa-youtube platform-icon-mobile" style="color: #af3131"></i>
-                </a>
-            </div>
-            <div class="">
-                <a href="https://open.spotify.com/show/5YhPS8B6OaLcadan9PHXHq?si=76z8dDQySNmZORyjSXkQSQ"
-                    target="_blank">
-                    <i class="fab fa-spotify platform-icon-mobile" style="color: #1dd15d"></i>
-                </a>
-            </div>
-            <div class="">
-                <a href="https://applepodcasts.com/diplomacyunscripted" target="_blank">
-                    <i class="fas fa-podcast platform-icon-mobile" style="color: #db4aee"></i>
-                </a>
-            </div>
-            <div class="">
-                <a href="https://patreon.com/DiplomacyUnscripted" target="_blank">
-                    <i class="fab fa-patreon platform-icon-mobile" style="color: #e8364b"></i>
-                </a>
-            </div>
+          <div class="">
+            <a href="https://youtube.com/@diplomacyunscripted" target="_blank">
+              <i
+                class="fa-brands fa-youtube platform-icon-mobile"
+                style="color: #af3131"
+              ></i>
+            </a>
+          </div>
+          <div class="">
+            <a
+              href="https://open.spotify.com/show/5YhPS8B6OaLcadan9PHXHq?si=76z8dDQySNmZORyjSXkQSQ"
+              target="_blank"
+            >
+              <i
+                class="fab fa-spotify platform-icon-mobile"
+                style="color: #1dd15d"
+              ></i>
+            </a>
+          </div>
+          <div class="">
+            <a
+              href="https://applepodcasts.com/diplomacyunscripted"
+              target="_blank"
+            >
+              <i
+                class="fas fa-podcast platform-icon-mobile"
+                style="color: #db4aee"
+              ></i>
+            </a>
+          </div>
+          <div class="">
+            <a href="https://patreon.com/DiplomacyUnscripted" target="_blank">
+              <i
+                class="fab fa-patreon platform-icon-mobile"
+                style="color: #e8364b"
+              ></i>
+            </a>
+          </div>
         </div>
 
         <!-- Desktop version (shown on larger screens) -->
         <div class="platform-grid">
-            <!-- YouTube -->
-            <div class="platform-card">
-                <a href="https://youtube.com/@diplomacyunscripted?si=rz7S9c6qN-c1xSOS" target="_blank">
-                    <div class="platform-icon">
-                        <i class="fa-brands fa-youtube" style="color: #af3131"></i>
-                    </div>
-                    <h3>YouTube</h3>
-                    <p>Watch our latest episodes with video content and special features.</p>
-                    <div class="btn btn-primary">Watch Now</div>
-                </a>
-            </div>
+          <!-- YouTube -->
+          <div class="platform-card">
+            <a
+              href="https://youtube.com/@diplomacyunscripted?si=rz7S9c6qN-c1xSOS"
+              target="_blank"
+            >
+              <div class="platform-icon">
+                <i class="fa-brands fa-youtube" style="color: #af3131"></i>
+              </div>
+              <h3>YouTube</h3>
+              <p>
+                Watch our latest episodes with video content and special
+                features.
+              </p>
+              <div class="btn btn-primary">Watch Now</div>
+            </a>
+          </div>
 
-            <!-- Spotify -->
-            <div class="platform-card">
-                <a href="https://open.spotify.com/show/5YhPS8B6OaLcadan9PHXHq?si=76z8dDQySNmZORyjSXkQSQ"
-                    target="_blank">
-                    <div class="platform-icon">
-                        <i class="fab fa-spotify" style="color: #1dd15d"></i>
-                    </div>
-                    <h3>Spotify</h3>
-                    <p>Stream our podcast on Spotify and add us to your favorite playlists .</p>
-                    <div class="btn btn-primary">Listen on Spotify</div>
-                </a>
-            </div>
+          <!-- Spotify -->
+          <div class="platform-card">
+            <a
+              href="https://open.spotify.com/show/5YhPS8B6OaLcadan9PHXHq?si=76z8dDQySNmZORyjSXkQSQ"
+              target="_blank"
+            >
+              <div class="platform-icon">
+                <i class="fab fa-spotify" style="color: #1dd15d"></i>
+              </div>
+              <h3>Spotify</h3>
+              <p>
+                Stream our podcast on Spotify and add us to your favorite
+                playlists .
+              </p>
+              <div class="btn btn-primary">Listen on Spotify</div>
+            </a>
+          </div>
 
-            <!-- Apple Podcasts -->
-            <div class="platform-card">
-                <a href="https://podcasts.apple.com/diplomacyunscripted" target="_blank">
-                    <div class="platform-icon">
-                        <i class="fas fa-podcast" style="color: #db4aee"></i>
-                    </div>
-                    <h3>Apple Podcasts</h3>
-                    <p>Subscribe to get new episodes automatically.</p>
-                    <div class="btn btn-primary">Subscribe</div>
-                </a>
-            </div>
+          <!-- Apple Podcasts -->
+          <div class="platform-card">
+            <a
+              href="https://podcasts.apple.com/diplomacyunscripted"
+              target="_blank"
+            >
+              <div class="platform-icon">
+                <i class="fas fa-podcast" style="color: #db4aee"></i>
+              </div>
+              <h3>Apple Podcasts</h3>
+              <p>Subscribe to get new episodes automatically.</p>
+              <div class="btn btn-primary">Subscribe</div>
+            </a>
+          </div>
 
-            <!-- Patreon -->
-            <div class="platform-card">
-                <a href="https://patreon.com/DiplomacyUnscripted?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink"
-                    target="_blank">
-                    <div class="platform-icon">
-                        <i class="fab fa-patreon" style="color: #e8364b"></i>
-                    </div>
-                    <h3>Patreon</h3>
-                    <p>Get early access on our content and support the podcast on Patreon.</p>
-                    <div class="btn btn-primary">Join Patreon</div>
-                </a>
-            </div>
+          <!-- Patreon -->
+          <div class="platform-card">
+            <a
+              href="https://patreon.com/DiplomacyUnscripted?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink"
+              target="_blank"
+            >
+              <div class="platform-icon">
+                <i class="fab fa-patreon" style="color: #e8364b"></i>
+              </div>
+              <h3>Patreon</h3>
+              <p>
+                Get early access on our content and support the podcast on
+                Patreon.
+              </p>
+              <div class="btn btn-primary">Join Patreon</div>
+            </a>
+          </div>
         </div>
-    </section>
+      </section>
 
-     <!-- Buy Me A Coffee -->
-        <section class="hero">
-            <div class="bmc-btn">
-                <a href="https://buymeacoffee.com/diplomacyunscripted" target="_blank">
-                    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee"
-                        style="height: 50px !important; width: auto" />
-                </a>
-            </div>
-        </section>
+      <!-- Buy Me A Coffee -->
+      <section class="hero">
+        <div class="bmc-btn">
+          <a
+            href="https://buymeacoffee.com/diplomacyunscripted"
+            target="_blank"
+          >
+            <img
+              src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+              alt="Buy Me A Coffee"
+              style="height: 50px !important; width: auto"
+            />
+          </a>
+        </div>
+      </section>
 
-    <!-- Other Episodes -->
-    <section class="episodes" id="episodes">
+      <!-- Other Episodes -->
+      <section class="episodes" id="episodes">
         <h2 class="section-title">Other Episodes</h2>
+      </section>
 
-         <!-- Testimonials -->
-        <section class="testimonials">
-            <h2 class="section-title">What Our Listeners Say</h2>
-
-		</section>
-  </main>
+      <!-- Testimonials -->
+      <section class="testimonials">
+        <h2 class="section-title">What Our Listeners Say</h2>
+      </section>
+    </main>
 
     <footer>
       <div class="footer-content">
         <div class="footer-column">
           <h3>Diplomacy Unscripted</h3>
           <p>
-            Demystifying Diplomacy, making it accessible <br> and engaging for a
-            broad audience
+            Demystifying Diplomacy, making it accessible <br />
+            and engaging for a broad audience
           </p>
-         </div>
+        </div>
 
         <div class="footer-column">
           <h3>Follow us on</h3>
           <ul>
-            <li><a href="https://instagram.com/diplomacyunscripted"
-              class="social-link"
-              target="_blank"
-            >
-              <i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://facebook.com/profile.php?id=61577708411176"
-              class="social-link"
-              target="_blank"
-            >
-              <i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="https://x.com/diplomacyhubke?s=11"
-              class="social-link"
-              target="_blank"
-            >
-              <i class="fab fa-x"></i></a></li>
-            <li><a href="https://www.tiktok.com/@diplomacyunscripted"
-              class="social-link"
-              target="_blank"
-            >
-              <i class="fab fa-tiktok"></i></a></li>
-
+            <li>
+              <a
+                href="https://instagram.com/diplomacyunscripted"
+                class="social-link"
+                target="_blank"
+              >
+                <i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://facebook.com/profile.php?id=61577708411176"
+                class="social-link"
+                target="_blank"
+              >
+                <i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://x.com/diplomacyhubke?s=11"
+                class="social-link"
+                target="_blank"
+              >
+                <i class="fab fa-x"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.tiktok.com/@diplomacyunscripted"
+                class="social-link"
+                target="_blank"
+              >
+                <i class="fab fa-tiktok"></i
+              ></a>
+            </li>
           </ul>
         </div>
 
@@ -275,6 +328,7 @@
           </form>
         </div>
       </div>
+      <br />
       <div class="partners">
         <p>
           In Partnership with
@@ -291,7 +345,7 @@
       </div>
     </footer>
 
-        <script
+    <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
     ></script>

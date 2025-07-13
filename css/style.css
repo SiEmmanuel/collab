@@ -948,7 +948,6 @@ h4 {
 
 .episodes {
   padding: var(--space-xl) var(--space-md);
-  background-color: var(--secondary);
   text-align: center;
   position: relative;
 }
@@ -1177,7 +1176,7 @@ h4 {
 
 .testimonials {
   padding: var(--space-xl) var(--space-md);
-  background-color: var(--card-bg);
+
   text-align: center;
   overflow: hidden;
   position: relative;
